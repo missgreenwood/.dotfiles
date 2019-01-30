@@ -10,6 +10,8 @@ set path+=**
 " edit runtimepath
 set runtimepath+=~/.vim/syntax
 
+" use system clipboard
+set clipboard=unnamedplus
 
 let mapleader=' '
 let maplocalleader=' '
@@ -293,5 +295,4 @@ vnoremap > >gv
 set background=dark
 " colorscheme iceberg
 colorscheme luna-term
-
 

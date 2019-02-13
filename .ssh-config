@@ -1,3 +1,120 @@
 Host 172.16.*
 	User root
 	ForwardAgent yes
+
+Host jenkins
+Hostname 172.16.100.50
+User root
+
+Host web-eu01
+Hostname 172.16.3.1
+User root
+
+Host api-eu01
+Hostname 172.16.3.108
+User root
+
+Host api-eu02
+Hostname 172.16.3.109
+User root
+
+Host api-eu03
+Hostname 172.16.3.110
+User root
+
+Host api-eu04
+Hostname 172.16.3.112
+User root
+
+Host api-eu05
+Hostname 172.16.3.113
+User root
+
+Host gateway-eu01
+Hostname 172.16.3.8
+User root
+
+Host repo-eu01
+Hostname 172.16.5.1
+User root
+
+Host proxy-eu01
+Hostname 172.16.11.195
+User root
+
+Host proxy-eu02
+Hostname 172.16.15.165
+User root
+
+Host galera-eu07
+Hostname 172.16.121.23
+User root
+
+Host galera-eu08
+Hostname 172.16.121.24
+User root
+
+Host galera-eu09
+Hostname 172.16.121.25
+User root
+
+Host backend-us01
+Hostname backendhost.g-portal.us
+User root
+
+Host proxy-us01
+Hostname 172.17.3.0
+User root
+
+Host api-us01
+Hostname 172.17.3.4
+User root
+
+Host web-us01
+Hostname 172.17.3.1
+User root
+
+Host gateway-us01
+Hostname 172.17.6.1
+User root
+
+Host repo-us01
+Hostname 172.17.5.1
+User root
+
+#Host proxy-us01
+#Hostname 172.17.
+
+Host repo-us02
+Hostname 172.17.5.2
+User root
+
+Host repo-zeuz
+Hostname 176.57.185.15
+User root
+
+Host gateway-zeuz
+Hostname 176.57.185.13
+User root
+
+Host ti-dev-host
+Hostname 176.57.171.80
+
+Host ti-dev-gateway
+Hostname 172.16.121.19
+User root
+
+Host ti-dev-docker
+Hostname 172.16.121.26
+
+Host ti-dev-lindeamon
+User root
+Hostname 172.16.121.27
+
+Host ti-dev-lindeamon2
+User root
+Hostname 172.16.121.29
+
+Host hwstatistics
+User root
+Hostname 172.16.13.110

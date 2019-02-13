@@ -10,8 +10,9 @@ set path+=**
 " edit runtimepath
 set runtimepath+=~/.vim/syntax
 
-" use system clipboard
-set clipboard=unnamedplus
+" enable system clipboard
+set clipboard=unnamed
+" set clipboard=unnamedplus
 
 let mapleader=' '
 let maplocalleader=' '

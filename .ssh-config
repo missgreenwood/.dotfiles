@@ -1,3 +1,12 @@
+Host *
+	IPQoS 0x00
+	Protocol 2
+	TCPKeepAlive yes
+	ServerAliveInterval 15
+	ServerAliveCountMax 2
+	ForwardAgent yes
+	ConnectTimeout 3
+
 Host 172.16.*
 	User root
 	ForwardAgent yes

@@ -284,7 +284,7 @@ vnoremap > >gv
 
 
 
-set background=dark
-colorscheme iceberg
+" set background=dark
+" colorscheme iceberg
 " colorscheme luna-term
 

@@ -69,13 +69,6 @@ Plugin 'craigemery/vim-autotag'
 let g:autotagTagsFile=".tags"
 
 
-Plugin 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims = 1
-let g:NERDDefaultNesting = 1
-let g:NERDDefaultAlign = 'left'
-" duplicate a line and comment out the first one
-nmap <Leader>cd <Leader>cyp
-
 " automagically add closing braces etc
 Plugin 'Raimondi/delimitMate'
 
@@ -114,8 +107,6 @@ cmap <C-n> <Plug>CmdlineCompleteForward
 
 
 Plugin 'flazz/vim-colorschemes'
-
-
 
 
 " finish vundle
@@ -294,6 +285,6 @@ vnoremap > >gv
 
 
 set background=dark
-" colorscheme iceberg
-colorscheme luna-term
+colorscheme iceberg
+" colorscheme luna-term
 

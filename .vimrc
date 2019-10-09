@@ -1,4 +1,3 @@
-
 " BASICS
 
 " we use vim, not vi
@@ -35,7 +34,6 @@ augroup END
 " }}}
 
 
-
 " PLUGINS
 
 " managed by Vundle. Install like this:
@@ -46,28 +44,20 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
-
-
 Plugin 'gmarik/vundle'
 
-
 Plugin 'vim-airline/vim-airline'
-
 
 " preview register contents
 Plugin 'junegunn/vim-peekaboo'
 
-
 Plugin 'airblade/vim-gitgutter'
 
-
 Plugin 'haya14busa/incsearch.vim'
-
 
 " generate tag file automagically
 Plugin 'craigemery/vim-autotag'
 let g:autotagTagsFile=".tags"
-
 
 " automagically add closing braces etc
 Plugin 'Raimondi/delimitMate'
@@ -77,7 +67,6 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'vim-scripts/toggle_words.vim'
 noremap <silent> <Leader>o :ToggleWord<CR>
-
 
 " amazing fuzzy finder
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -99,26 +88,19 @@ nnoremap <Leader>vf :VimuxRunCommand "clear; " . expand('%')<Left><Left><Left><L
 nnoremap <Leader>vv :update<CR>:VimuxRunLastCommand<CR>
 nnoremap <Leader>vq :VimuxCloseRunner<CR>
 
-
 " autocompletion in command mode
 Plugin 'vim-scripts/CmdlineComplete'
 cmap <C-p> <Plug>CmdlineCompleteBackward
 cmap <C-n> <Plug>CmdlineCompleteForward
 
-
 Plugin 'flazz/vim-colorschemes'
-
 
 " finish vundle
 call vundle#end()
 filetype plugin indent on
 
 
-
-
-
 " SETTINGS
-
 
 " netrw file browser
 
@@ -131,18 +113,15 @@ let g:netrw_browse_split = 4
 
 " toggle netrw and start from current file
 nnoremap <silent> <F2> :exe ':Lexplore! ' . expand('%:p:h')<CR>
+
 " toggle netrw and start from working (project) dir
 nnoremap <silent> <F3> :Lexplore!<CR>
 
-
-
 " puts new split windows to the bottom of the current
 set splitbelow
+
 " puts new vsplit windows to the right of the current
 set splitright
-
-
-
 
 " allow mouse usage for bad days
 if has('mouse')
@@ -192,7 +171,6 @@ set showcmd
 set ruler
 set laststatus=2
 
-
 " completions behaviour
 set wildmode=longest,full
 set wildmenu
@@ -219,7 +197,6 @@ set backspace=indent,eol,start
 set hidden
 
 
-
 " KEYMAPPINGS
 
 " open my vimrc right away
@@ -231,7 +208,6 @@ noremap <M-j>  <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 noremap <Esc>j <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 noremap <M-k>  <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
 noremap <Esc>k <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
-
 
 " swap ` and ' (jump to markers)
 " (by default, ' marked line, ` marked line and column)
@@ -245,19 +221,15 @@ nnoremap <Leader>. `.
 nnoremap <c-o> <c-o>zz
 nnoremap <c-i> <c-i>zz
 
-
-
 " change to LRU buffer
 nnoremap <Space><Space> :buffer #<CR>
 nnoremap <Space><Tab>   :buffer #<CR>
-
 
 " change window
 nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
-
 
 " open help in vertical window
 cnoreabbrev <expr> h ((getcmdtype() is# ':' && getcmdline() is# 'h')
@@ -277,16 +249,15 @@ nnoremap gk 8k
 vnoremap gj 8j
 vnoremap gk 8k
 
-
 " indent lines
 vnoremap < <gv
 vnoremap > >gv
 
-
-
-" set background=dark
+" appearance
 set background=light
 colorscheme PaperColor
+
+" alternative color schemes
 " colorscheme iceberg
 " colorscheme luna-term
 

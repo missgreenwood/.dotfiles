@@ -285,6 +285,8 @@ vnoremap > >gv
 
 
 " set background=dark
+set background=light
+colorscheme PaperColor
 " colorscheme iceberg
 " colorscheme luna-term
 

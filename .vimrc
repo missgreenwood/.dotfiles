@@ -98,6 +98,9 @@ Plugin 'flazz/vim-colorschemes'
 " Correct folding for Python code
 Plugin 'tmhedberg/SimpylFold'
 
+" Python indentation
+Plugin 'indentpython'
+
 " finish vundle
 call vundle#end()
 filetype plugin indent on

@@ -95,6 +95,9 @@ cmap <C-n> <Plug>CmdlineCompleteForward
 
 Plugin 'flazz/vim-colorschemes'
 
+" Correct folding for Python code
+Plugin 'tmhedberg/SimpylFold'
+
 " finish vundle
 call vundle#end()
 filetype plugin indent on

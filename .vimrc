@@ -196,6 +196,10 @@ set backspace=indent,eol,start
 " allow to :edit multiple files in buffers without writing changes
 set hidden
 
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
 
 " KEYMAPPINGS
 
@@ -252,6 +256,9 @@ vnoremap gk 8k
 " indent lines
 vnoremap < <gv
 vnoremap > >gv
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 " appearance
 set background=light

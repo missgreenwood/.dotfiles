@@ -101,6 +101,9 @@ Plugin 'tmhedberg/SimpylFold'
 " Python indentation
 Plugin 'indentpython'
 
+" Smart indentation
+Plugin 'tpope/vim-sleuth'
+
 " finish vundle
 call vundle#end()
 filetype plugin indent on
@@ -216,6 +219,16 @@ au BufNewFile,BufRead *.py
     \ set autoindent | 
     \ set fileformat=unix 
 
+" characters to show in list mode
+set listchars=nbsp:⦸
+set listchars+=eol:$
+set listchars+=extends:❯
+set listchars+=precedes:❮
+set listchars+=tab:--
+if v:version > 704 || v:version == 704 && has("patch711")
+    set listchars+=space:·
+    set listchars+=trail:•
+endif
 
 " KEYMAPPINGS
 
@@ -273,8 +286,8 @@ vnoremap gk 8k
 vnoremap < <gv
 vnoremap > >gv
 
-" Enable folding with the spacebar
-nnoremap <space> za
+" toggle show listchars (like whitespace)
+nnoremap <silent> <leader>ya :set list!<cr>
 
 " appearance
 set background=light

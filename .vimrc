@@ -77,7 +77,13 @@ nnoremap <Leader>f :FzfFiles<CR>
 nnoremap <Leader>s :FzfAg<CR>
 nnoremap <Leader>t :FzfTags<CR>
 
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/ale'
+" use Pylint linter 
+let g:ale_linters = {'python': ['pylint']}
+" TODO - fixer not found (should use autopep8)
+let g:ale_fixers = {'python': ['autopep8']}
+" Fix files on saving
+let g:ale_fix_on_save = 1
 
 Plugin 'benmills/vimux'
 let g:VimuxHeight = "34"

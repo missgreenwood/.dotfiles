@@ -76,6 +76,15 @@ nnoremap <Leader>b :FzfBuffers<CR>
 nnoremap <Leader>f :FzfFiles<CR>
 nnoremap <Leader>s :FzfAg<CR>
 nnoremap <Leader>t :FzfTags<CR>
+" extra interactive key bindings
+" (scroll with <c-k> and <c-j>
+let g:fzf_action = {
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-l': 'vsplit',
+  \ 'ctrl-v': 'vsplit',
+  \ 'ctrl-k': 'previous-history',
+  \ 'ctrl-j': 'next-history',
+  \ }
 
 Plugin 'dense-analysis/ale'
 " use Pylint linter 

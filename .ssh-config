@@ -124,3 +124,8 @@ Host web-eu01
 Host web-us01
 	Hostname 172.17.3.1
 	User root
+
+Host mybuzzn
+	Hostname 78.47.255.192
+	User root
+	ForwardAgent yes
